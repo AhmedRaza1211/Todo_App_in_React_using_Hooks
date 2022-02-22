@@ -2,15 +2,15 @@ import Todo from './Hooks/todo'
 
 function App() {
 
-  let [todos1, inputValue1, onInputChange1, addTodo1, showTodo1] = Todo();
+  let [todos1, inputValue, onInputChange, addTodo, showTodo] = Todo();
 
   return (
     <div>
       <h1> Todo App </h1>
-      <input value={inputValue1} placeholder='Enter Todo' onChange={onInputChange1} />
-      <button onClick={addTodo1}> Add Todo </button>
+      <input value={inputValue} placeholder='Enter Todo' onChange={onInputChange} />
+      <button onClick={addTodo}> Add Todo </button>
       <ol>
-        {showTodo1}
+        {showTodo}
       </ol>
     </div>
   );
